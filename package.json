@@ -1,0 +1,27 @@
+{
+  "name": "kaobao-goal-app",
+  "version": "2.0.0",
+  "description": "备考目标 · 倒计时与进度记录本（桌面版）",
+  "main": "main.js",
+  "author": "local",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win --dir"
+  },
+  "devDependencies": {
+    "electron": "^31.7.7",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.local.kaobao",
+    "productName": "备考记录本",
+    "asar": true,
+    "files": ["main.js", "preload.js", "page.html"],
+    "directories": { "output": "../产物" },
+    "win": {
+      "target": [{ "target": "dir", "arch": ["x64"] }],
+      "signAndEditExecutable": false
+    }
+  }
+}

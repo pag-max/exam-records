@@ -1,0 +1,25 @@
+node_modules/
+dist/
+dist-*/
+build/
+产物/
+backups/
+_backup_*/
+cache/
+logs/
+thumbs/
+__pycache__/
+*.log
+*.tmp
+
+# 本地数据（含个人记录，不入库）
+records.json
+records.json.bak
+records.旧版备份-*.json
+data.json
+账号配置.txt
+.verified.json
+config.json
+settings.json
+todos.json
+local.properties
